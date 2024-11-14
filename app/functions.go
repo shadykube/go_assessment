@@ -2,7 +2,9 @@ package goassessment
 
 // write a function that returns a function
 func fFunction(str string) func(string) string {
-	return nil
+	return func(s string) string {
+		return str + " " + s // example: Concatenate the two strings
+	}
 }
 
 // write a function that returns a slice of closures
