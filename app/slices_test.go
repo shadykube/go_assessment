@@ -219,7 +219,7 @@ func TestInsert(t *testing.T) {
 		t.Error(shouldBe(a, b))
 	}
 
-	// insert at back
+	// insert at front
 	a = []int{1}
 	b = []int{1, 5}
 	a = insert(a, 5, 1)
